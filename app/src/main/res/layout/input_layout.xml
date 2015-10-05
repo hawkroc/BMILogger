@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:textAppearance="?android:attr/textAppearanceLarge">
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unit" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_inter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:checked="true"
+                android:text="@string/international" />
+
+            <RadioButton
+                android:id="@+id/radio_bri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/british" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_height"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/height_uni"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cm"
+            android:textSize="16sp" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_weight"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/weight_uni"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kg"
+            android:textSize="16sp" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/standard"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/standardList"
+            android:spinnerMode="dialog" />
+
+
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/advice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick_Cal"
+            android:text="@string/calculate_button" />
+
+
+        <Button
+            android:id="@+id/button_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick_history"
+            android:text="@string/button_his" />
+
+
+    </TableRow>
+
+</TableLayout>

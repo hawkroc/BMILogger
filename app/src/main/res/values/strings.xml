@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">BMI Logger</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="calculate_button">calculate!</string>
+    <string name="action_remove">remove</string>
+    <string name="action_add">add</string>
+    <string name="rest_button">rest</string>
+    <string name="button_login">Login</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_his">BMI Record</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="third_button">the third button！！</string>
+
+
+    <!--TextView-->
+    <string name="email">Email: </string>
+    <string name="height">Height: </string>
+    <string name="weight">Weight: </string>
+    <string name="unit">Unit of measure: </string>
+    <string name="international">Metric:</string>
+    <string name="british">British:</string>
+    <string name="is_save">if be save?</string>
+    <string name="save">save</string>
+    <string name="restult">restult</string>
+
+
+    <string name="standard">Choose standard: </string>
+
+    <!--Reg-->
+    <string name="reg_email">^\\s*\\w+(?:\\.{0,1}[\\w-]+)*@[a-zA-Z0-9]+(?:[-.][a-zA-Z0-9]+)*\\.[a-zA-Z]+\\s*$</string>
+    <string name="reg_int">^[0-9]*$</string>
+     
+<!-- unt -->
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+    <string name="pound">lb</string>
+    <string name="inch">in</string>
+
+<!--list-->
+    　<string-array name="standardList">
+
+    　　　　　　<item>Asia</item>
+
+    　　　　　　<item>China</item>
+
+    　　　　　　<item>WHO</item>
+
+    　　　　</string-array>
+    <!--hint-->
+    <string name="hint_login">pleas input you email</string>
+    <string name="hint_height">pleas input you height</string>
+    <string name="hint_weight">pleas input you weight</string>
+
+
+
+    <!--error message-->
+    <string name="error_login">This is not a right address </string>
+    <string name="error_number">Please input correct number</string>
+
+    <!-- toast -->
+
+    <string name="toast_message_welcome">  ,welcome to calculate your BMI the result will be saved </string>
+    <string name="toast_message_save">you data will alreay be save in this device you also can
+    check the record </string>
+
+
+    <!--advice-->
+    <string name="thin">you are too thin. you can eat more!</string>
+    <string name="hot">you have a cool body!</string>
+    <string name="overweight">you had better do more excise</string>
+    <string name="fat">you are a little  fatter. you can eat less!</string>
+    <string name="fatter"> you must control your food </string>
+    <string name="much_fatter">you take a high risk!</string>
+    <string name="fattest">if you are not joke,please go to see doctor immediately！</string>
+
+
+    <string name="error">Do not joke you are not human .Please input the correct number</string>
+    <string name="title_activity_record">RecordActivity</string>
+</resources>

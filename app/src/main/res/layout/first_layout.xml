@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAppearance="?android:attr/textAppearanceLarge">
+    <!-- Peng yin -->
+
+    <TableRow
+        android:id="@+id/email"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_login"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+
+    <TableRow
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_Login"
+            android:text="@string/button_login" />
+
+        <Button
+            android:id="@+id/button_rest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick_Reset"
+            android:text="@string/button_reset" />
+    </TableRow>
+
+</TableLayout>
